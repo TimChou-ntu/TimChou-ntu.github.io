@@ -12,12 +12,11 @@ profile:
     <center>Taipei, Taiwan</center>
     <center>
         <a href="https://drive.google.com/file/d/1kpiGAN3KHd_4Tey_fVhqoOWl6sxFKrpK/view?usp=sharing">CV</a> | 
-        <a href="https://www.linkedin.com/in/zi-ting-chou-251875201/">LinkedIn</a> | 
+        <a href="www.linkedin.com/in/zi-ting-chou-251875201">LinkedIn</a> | 
         <a href="https://github.com/TimChou-ntu">GitHub</a>
     </center>
 
 news: true # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
