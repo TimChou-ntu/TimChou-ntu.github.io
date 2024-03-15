@@ -5,7 +5,7 @@
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          <img data-zoomable class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
@@ -14,7 +14,7 @@
             path=entry_path
             sizes = "200px"
             class="preview z-depth-1 rounded"
-            zoomable=false
+            zoomable=true
             alt=entry.preview
           %}
         {% endif %}
@@ -74,11 +74,8 @@
           {% if forloop.first == false %},&nbsp;{% endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
-        {%- if author_is_self -%}
-          <em>
-            {{- author.first }}
-            {{ author.last -}}
-          </em>
+        {%- if author_is_self or author.last contains "Chou" -%}
+            <strong>{{- author.first }}{{ author.last -}}</strong>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">
