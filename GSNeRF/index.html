@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Language-Guided Transformer for Federated Multi-Label Classification">
+  <meta name="keywords" content="Federated Learning, Vision and Language, Multi-label Classification">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Language-Guided Transformer for Federated Multi-Label Classification</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/ntu.jpeg">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <!-- <script src="./static/js/index.js"></script> -->
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://jack24658735.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Language-Guided Transformer for Federated Multi-Label Classification</h1>
+          
+          <h2 class="title is-size-3 publication-title">AAAI 2024</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jack24658735.github.io/">I-Jieh Liu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="http://vllab.ee.ntu.edu.tw/students.html">Ci-Siang Lin</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://fuenyang1127.github.io/">Fu-En Yang</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a><sup>1,2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>National Taiwan University,</span>
+            <span class="author-block"><sup>2</sup>NVIDIA</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.07165"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.07165"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Jack24658735/FedLGT"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero">
+  <div class="container is-max-desktop">
+      <div class="content has-text-justified">
+      <center><img src="./static/images/fig1_for_project_page.png" width="65%"></center>  
+        <p>
+          <!-- <iframe src="fig1.pdf" style="width: 100%;height: 100%;border: none;"></iframe> -->
+          <b>Challenges in multi-label federated learning.</b>
+          Since diverse label correlations can be observed across clients, aggregating local models might not be sufficiently generalizable.
+        </p>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Federated Learning (FL) is an emerging paradigm that enables multiple users to collaboratively train a robust model in a privacy-preserving manner without sharing their private data. 
+            Most existing approaches of FL only consider traditional single-label image classification, ignoring the impact when transferring the task to multi-label image classification. 
+            Nevertheless, it is still challenging for FL to deal with user heterogeneity in their local data distribution in the real-world FL scenario, and this issue becomes even more severe in multi-label image classification. 
+            Inspired by the recent success of Transformers in centralized settings, we propose a novel FL framework for multi-label classification. 
+            Since partial label correlation may be observed by local clients during training, direct aggregation of locally updated models would not produce satisfactory performances. 
+            Thus, we propose a novel FL framework of <b>L</b>anguage-<b>G</b>uided <b>T</b>ransformer (<b>FedLGT</b>) to tackle this challenging task, which aims to exploit and transfer knowledge across different clients for learning a robust global model. 
+            Through extensive experiments on various multi-label datasets (e.g., FLAIR, MS-COCO, etc.), we show that our FedLGT is able to achieve satisfactory performance and outperforms standard FL techniques under multi-label FL scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Framework</h2>
+        <center><img src="./static/images/fig2_for_project_page.png" width="100%"></center>
+
+        <div class="content has-text-justified">
+          <p>
+            <b>Overview of FedLGT.</b>
+            Given an image with multi-labels to predict, the global model from each communication
+            round updates the local model with Client-Aware Masked Label Embedding (CA-MLE), which exploits partial label correlation
+            observed at each client. In order to properly align local models for multi-label FL, universal label embeddings (ULE) are utilized
+            in FedLGT. (Best viewed in color.)
+          </p>
+        </div>
+        
+        <!--/ Interpolating. -->
+
+        <div class="columns is-centered">
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-3">Model Details</h2>
+              <div class="content has-text-justified">
+                <p>
+                  With the input image $x$ and label $y$, CA-MLE generates the prediction by global model $w^t$ and calibrates the state embeddings, 
+                  while ULE advances the pre-trained label embeddings from CLIP for model aggregation purposes.
+                </p>
+              </div>
+              <br>
+              <br>
+              <center><img src="./static/images/fig3_for_project_page.png" width="100%"></center>
+            </div>
+          </div>
+          <!--/ Visual Effects. -->
+
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-3">Algorithm</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We perform local model updates and global model aggregation in one communication round to achieve
+                  a federated learning process.
+                  The pseudo-code of our proposed framework is described
+                  in Algorithm 1 as follows.
+                </p>
+              </div>
+              <center><img src="./static/images/algo.png" width="85%"></center>
+            </div>
+          </div>
+          
+        </div>
+        <h3 class="title is-3">Experiments</h3>
+
+        <div class="content has-text-justified">
+          <center><img src="./static/images/FLAIR_table1.png" width="75%"></center>
+          <p>
+            Table 1: Comparisons of <b>coarse-grained</b> multi-label classification
+            task on FLAIR. <b>Bold</b> denotes the best result under FL setting.
+          </p>
+          <center><img src="./static/images/FLAIR_table2.png" width="75%"></center>
+          <p>
+            Table 2: Comparisons of <b>fine-grained</b> multi-label classification
+            task on FLAIR. <b>Bold</b> denotes the best result under FL setting.
+          </p>
+        </div>
+       
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+ 
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+      If you find this useful for your research, please consider citing:
+    <pre><code>@inproceedings{liu2024fedlgt,
+  author    = {I-Jieh Liu and Ci-Siang Lin and Fu-En Yang and Yu-Chiang Frank Wang},
+  title     = {Language-Guided Transformer for Federated Multi-Label Classification},
+  booktitle = {AAAI},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://jack24658735.github.io/" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This webpage template is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
