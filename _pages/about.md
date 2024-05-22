@@ -12,7 +12,7 @@ profile:
     <center>Taipei, Taiwan</center>
     <center>
         <a href="https://drive.google.com/file/d/1kpiGAN3KHd_4Tey_fVhqoOWl6sxFKrpK/view?usp=sharing">CV</a> | 
-        <a href="www.linkedin.com/in/zi-ting-chou-251875201">LinkedIn</a> | 
+        <a href="https://www.linkedin.com/in/zi-ting-chou-251875201">LinkedIn</a> | 
         <a href="https://github.com/TimChou-ntu">GitHub</a>
     </center>
 
