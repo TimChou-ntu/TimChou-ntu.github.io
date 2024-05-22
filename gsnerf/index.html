@@ -140,27 +140,20 @@
 
 <section class="hero">
   <div class="container is-max-desktop">
-      <div class="content has-text-justified">
+      <!-- <div class="content has-text-justified">
       <center><img src="./static/images/fig1_for_project_page.png" width="65%"></center>  
-        <p>
+        <p> -->
           <!-- <iframe src="fig1.pdf" style="width: 100%;height: 100%;border: none;"></iframe> -->
-          <b>Challenges in multi-label federated learning.</b>
+          <!-- <b>Challenges in multi-label federated learning.</b>
           Since diverse label correlations can be observed across clients, aggregating local models might not be sufficiently generalizable.
-        </p>
+        </p> -->
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Federated Learning (FL) is an emerging paradigm that enables multiple users to collaboratively train a robust model in a privacy-preserving manner without sharing their private data. 
-            Most existing approaches of FL only consider traditional single-label image classification, ignoring the impact when transferring the task to multi-label image classification. 
-            Nevertheless, it is still challenging for FL to deal with user heterogeneity in their local data distribution in the real-world FL scenario, and this issue becomes even more severe in multi-label image classification. 
-            Inspired by the recent success of Transformers in centralized settings, we propose a novel FL framework for multi-label classification. 
-            Since partial label correlation may be observed by local clients during training, direct aggregation of locally updated models would not produce satisfactory performances. 
-            Thus, we propose a novel FL framework of <b>L</b>anguage-<b>G</b>uided <b>T</b>ransformer (<b>FedLGT</b>) to tackle this challenging task, which aims to exploit and transfer knowledge across different clients for learning a robust global model. 
-            Through extensive experiments on various multi-label datasets (e.g., FLAIR, MS-COCO, etc.), we show that our FedLGT is able to achieve satisfactory performance and outperforms standard FL techniques under multi-label FL scenarios.
-          </p>
+            Utilizing multi-view inputs to synthesize novel-view images, Neural Radiance Fields (NeRF) have emerged as a popular research topic in 3D vision. In this work, we introduce a Generalizable Semantic Neural Radiance Field (GSNeRF), which uniquely takes image semantics into the synthesis process so that both novel view images and the associated semantic maps can be produced for unseen scenes. Our GSNeRF is composed of two stages: Semantic Geo-Reasoning and Depth-Guided Visual rendering. The former is able to observe multi-view image inputs to extract semantic and geometry features from a scene. Guided by the resulting image geometry information, the latter performs both image and semantic rendering with improved performances. Our experiments not only confirm that GSNeRF performs favorably against prior works on both novel-view image and semantic segmentation synthesis but the effectiveness of our sampling strategy for visual rendering is further verified.          </p>
         </div>
       </div>
     </div>
