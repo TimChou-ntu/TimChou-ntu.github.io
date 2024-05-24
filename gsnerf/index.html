@@ -180,15 +180,13 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Framework</h2>
-        <center><img src="./static/images/fig2_for_project_page.png" width="100%"></center>
+        <center><img src="./static/images/Framework.png" width="100%"></center>
 
         <div class="content has-text-justified">
           <p>
-            <b>Overview of FedLGT.</b>
-            Given an image with multi-labels to predict, the global model from each communication
-            round updates the local model with Client-Aware Masked Label Embedding (CA-MLE), which exploits partial label correlation
-            observed at each client. In order to properly align local models for multi-label FL, universal label embeddings (ULE) are utilized
-            in FedLGT. (Best viewed in color.)
+            <b>Overview of GSNeRF.</b>
+            Given multi-view images of a scene, the Semantic Geo-Reasoner $𝐺_𝜃$ predicts the depth map of each image, which is aggregated to estimate the target view depth map. With DT as key geometric guidance, we design Depth-Guided Visual Rendering to render target view image and segmentation map respectively.
+
           </p>
         </div>
         
@@ -196,34 +194,31 @@
 
         <div class="columns is-centered">
           <!-- Visual Effects. -->
-          <div class="column">
+          <div class="column is-full-width">
             <div class="content">
               <h2 class="title is-3">Model Details</h2>
               <div class="content has-text-justified">
                 <p>
-                  With the input image $x$ and label $y$, CA-MLE generates the prediction by global model $w^t$ and calibrates the state embeddings, 
-                  while ULE advances the pre-trained label embeddings from CLIP for model aggregation purposes.
+                  While most methods using multi-view stereo to extract features of a scene, we predict depth from these features and further create two depth-guided sampling strategies to customize on two tasks.
                 </p>
               </div>
               <br>
               <br>
-              <center><img src="./static/images/fig3_for_project_page.png" width="100%"></center>
+              <center><img src="./static/images/reasoner.png" width="100%"></center>
+              <center><img src="./static/images/depth-guided-rendering.png" width="100%"></center>
             </div>
           </div>
           <!--/ Visual Effects. -->
 
-          <div class="column">
+          <div class="column is-full-width">
             <div class="content">
               <h2 class="title is-3">Algorithm</h2>
               <div class="content has-text-justified">
                 <p>
-                  We perform local model updates and global model aggregation in one communication round to achieve
-                  a federated learning process.
-                  The pseudo-code of our proposed framework is described
-                  in Algorithm 1 as follows.
+                  We perform novel-view depth estimation by aggregating depth maps from multi-view images, which is simply projecting all the depth maps to 3D space then reprojecting to the target view. The depth-guided visual rendering is designed to render both image and segmentation map with the guidance of depth map.
                 </p>
               </div>
-              <center><img src="./static/images/algo.png" width="85%"></center>
+              <center><img src="./static/images/alg.png" width="85%"></center>
             </div>
           </div>
           
