@@ -162,7 +162,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Utilizing multi-view inputs to synthesize novel-view images, Neural Radiance Fields (NeRF) have emerged as a popular research topic in 3D vision. In this work, we introduce a Generalizable Semantic Neural Radiance Field (GSNeRF), which uniquely takes image semantics into the synthesis process so that both novel view images and the associated semantic maps can be produced for unseen scenes. Our GSNeRF is composed of two stages: Semantic Geo-Reasoning and Depth-Guided Visual rendering. The former is able to observe multi-view image inputs to extract semantic and geometry features from a scene. Guided by the resulting image geometry information, the latter performs both image and semantic rendering with improved performances. Our experiments not only confirm that GSNeRF performs favorably against prior works on both novel-view image and semantic segmentation synthesis but the effectiveness of our sampling strategy for visual rendering is further verified.          </p>
+            Utilizing multi-view inputs to synthesize novel-view images, Neural Radiance Fields (NeRF) have emerged as a popular research topic in 3D vision. In this work, we introduce a Generalizable Semantic Neural Radiance Field (GSNeRF), which uniquely takes image semantics into the synthesis process so that both novel view images and the associated semantic maps can be produced for unseen scenes. Our GSNeRF is composed of two stages: <b>Semantic Geo-Reasoning</b> and <b>Depth-Guided Visual Rendering</b>. The former is able to observe multi-view image inputs to extract semantic and geometry features from a scene. Guided by the resulting image geometry information, the latter performs both image and semantic rendering with improved performances. Our experiments not only confirm that GSNeRF performs favorably against prior works on both novel-view image and semantic segmentation synthesis but the effectiveness of our sampling strategy for visual rendering is further verified.          </p>
         </div>
       </div>
     </div>
@@ -226,17 +226,17 @@
         <div class="content has-text-justified">
           <center><img src="./static/images/main_table.png" width="100%"></center>
           <p>
-            Table 1: Quantitative results on ScanNet & Replica. Note that methods in the first four rows take GT depth as inputs or training supervision, while the methods in the last six rows do not observe GT depth during training/testing.
+            <b>Table 1: Quantitative results on ScanNet & Replica.</b> Note that methods in the first four rows take GT depth as inputs or training supervision, while the methods in the last six rows do not observe GT depth during training/testing.
           </p>
           <center><img src="./static/images/finetune.png" width="50%"></center>
           <p>
-            Table 2: Results of finetuning on unseen scenes of ScanNet.
+            <b>Table 2: Results of finetuning on unseen scenes of ScanNet.</b>
           </p>
         </div>
         <div class="content has-text-justified">
           <center><img src="./static/images/qualitative.png" width="100%"></center>
           <p>
-            Figure 1: Qualitative evaluation. We compare the visual quality of the rendered novel view images (the first three columns) and semantic segmentation maps (the last three columns) with S-Ray.
+            <b>Figure 1: Qualitative evaluation.</b> We compare the visual quality of the rendered novel view images (the first three columns) and semantic segmentation maps (the last three columns) with S-Ray.
           </p>
         </div>
       </div>
