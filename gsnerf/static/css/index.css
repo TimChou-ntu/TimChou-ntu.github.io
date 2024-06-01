@@ -155,3 +155,11 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.image-container {
+  display: flex;
+  justify-content: space-between; /* 確保兩張圖之間保持間距 */
+}
+.image-container img {
+  width: 49%; /* 確保兩張圖總寬度不超過100% */
+}
