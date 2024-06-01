@@ -83,7 +83,7 @@
             <span class="author-block">
               <a href="https://timchou-ntu.github.io/">Zi-Ting Chou</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/shengyuhuang?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIx4bFd2MRZK49hWzPJJa1g%3D%3D">Sheng-Yu Huang</a><sup>1,2</sup>,</span>
+              <a href="https://www.linkedin.com/in/shengyuhuang">Sheng-Yu Huang</a><sup>1,2</sup>,</span>
             <span class="author-block">
               <a href="https://jack24658735.github.io/">I-Jieh Liu</a><sup>1,2</sup>,
             </span>
@@ -147,6 +147,18 @@
           <!-- <b>Challenges in multi-label federated learning.</b>
           Since diverse label correlations can be observed across clients, aggregating local models might not be sufficiently generalizable.
         </p> -->
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://youtu.be/HiAsGOYdo68"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -159,17 +171,6 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -192,9 +193,9 @@
         
         <!--/ Interpolating. -->
 
-        <div class="columns is-centered">
+        <!-- <div class="columns is-centered"> -->
           <!-- Visual Effects. -->
-          <div class="column is-full-width">
+          <!-- <div class="column is-full-width"> -->
             <div class="content">
               <h2 class="title is-3">Model Details</h2>
               <div class="content has-text-justified">
@@ -207,10 +208,10 @@
               <center><img src="./static/images/reasoner.png" width="100%"></center>
               <center><img src="./static/images/depth-guided-rendering.png" width="100%"></center>
             </div>
-          </div>
+          <!-- </div> -->
           <!--/ Visual Effects. -->
 
-          <div class="column is-full-width">
+          <!-- <div class="column is-full-width"> -->
             <div class="content">
               <h2 class="title is-3">Algorithm</h2>
               <div class="content has-text-justified">
@@ -220,21 +221,19 @@
               </div>
               <center><img src="./static/images/alg.png" width="85%"></center>
             </div>
-          </div>
+          <!-- </div> -->
           
-        </div>
+        <!-- </div> -->
         <h3 class="title is-3">Experiments</h3>
 
         <div class="content has-text-justified">
-          <center><img src="./static/images/FLAIR_table1.png" width="75%"></center>
+          <center><img src="./static/images/main_table.png" width="75%"></center>
           <p>
-            Table 1: Comparisons of <b>coarse-grained</b> multi-label classification
-            task on FLAIR. <b>Bold</b> denotes the best result under FL setting.
+            Table 1: Quantitative results on ScanNet & Replica. Note that methods in the first four rows take GT depth as inputs or training supervision, while the methods in the last six rows do not observe GT depth during training/testing.
           </p>
-          <center><img src="./static/images/FLAIR_table2.png" width="75%"></center>
+          <center><img src="./static/images/finetune.png" width="75%"></center>
           <p>
-            Table 2: Comparisons of <b>fine-grained</b> multi-label classification
-            task on FLAIR. <b>Bold</b> denotes the best result under FL setting.
+            Table 2: Results of finetuning on unseen scenes of ScanNet.
           </p>
         </div>
        
@@ -252,11 +251,14 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
       If you find this useful for your research, please consider citing:
-    <pre><code>@article{chou2024gsnerf,
-      title={GSNeRF: Generalizable Semantic Neural Radiance Fields with Enhanced 3D Scene Understanding},
-      author={Chou, Zi-Ting and Huang, Sheng-Yu and Liu, I and Wang, Yu-Chiang Frank and others},
-      journal={arXiv preprint arXiv:2403.03608},
-      year={2024}
+    <pre><code>@inproceedings{Chou2024gsnerf,
+      author    = {Zi‑Ting Chou* and Sheng‑Yu Huang* and I‑Jieh Liu and Yu‑Chiang Frank Wang},
+      title     = {GSNeRF: Generalizable Semantic Neural Radiance Fields with Enhanced 3D Scene Understanding},
+      booktitle = CVPR,
+      year      = {2024},
+      selected  = {true},
+      arxiv       = {2403.03608},
+      bibtex_show = {true},
     }</code></pre>
   </div>
 </section>
