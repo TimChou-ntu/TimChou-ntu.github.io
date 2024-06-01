@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [GSNeRF]() is accepted by CVPR 2024!! See you in Seattle 😎
+Our paper [GSNeRF](https://timchou-ntu.github.io/gsnerf/) is accepted by CVPR 2024!! See you in Seattle 😎
