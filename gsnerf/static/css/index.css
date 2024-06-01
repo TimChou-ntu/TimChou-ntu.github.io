@@ -158,8 +158,9 @@ body {
 
 .image-container {
   display: flex;
-  justify-content: space-between; /* 確保兩張圖之間保持間距 */
+  justify-content: space-between;
 }
 .image-container img {
-  width: 49%; /* 確保兩張圖總寬度不超過100% */
+  width: 48%;
+  height: auto; /* 確保圖片不變形 */
 }

@@ -200,8 +200,6 @@
                   While most methods using multi-view stereo to extract features of a scene, we predict depth from these features and further create two depth-guided sampling strategies to customize on two tasks.
                 </p>
               </div>
-              <br>
-              <br>
               <div class="image-container">
                 <img src="./static/images/reasoner.png" alt="Reasoner Image">
                 <img src="./static/images/depth-guided-rendering.png" alt="Depth Guided Rendering Image">
@@ -211,7 +209,7 @@
           <!--/ Visual Effects. -->
 
           <!-- <div class="column is-full-width"> -->
-            <div class="content">
+            <!-- <div class="content">
               <h2 class="title is-3">Algorithm</h2>
               <div class="content has-text-justified">
                 <p>
@@ -219,23 +217,28 @@
                 </p>
               </div>
               <center><img src="./static/images/alg.png" width="85%"></center>
-            </div>
+            </div> -->
           <!-- </div> -->
           
         <!-- </div> -->
         <h3 class="title is-3">Experiments</h3>
 
         <div class="content has-text-justified">
-          <center><img src="./static/images/main_table.png" width="75%"></center>
+          <center><img src="./static/images/main_table.png" width="100%"></center>
           <p>
             Table 1: Quantitative results on ScanNet & Replica. Note that methods in the first four rows take GT depth as inputs or training supervision, while the methods in the last six rows do not observe GT depth during training/testing.
           </p>
-          <center><img src="./static/images/finetune.png" width="75%"></center>
+          <center><img src="./static/images/finetune.png" width="50%"></center>
           <p>
             Table 2: Results of finetuning on unseen scenes of ScanNet.
           </p>
         </div>
-       
+        <div class="content has-text-justified">
+          <center><img src="./static/images/qualitative.png" width="100%"></center>
+          <p>
+            Figure 1: Qualitative evaluation. We compare the visual quality of the rendered novel view images (the first three columns) and semantic segmentation maps (the last three columns) with S-Ray.
+          </p>
+        </div>
       </div>
     </div>
     <!--/ Animation. -->
